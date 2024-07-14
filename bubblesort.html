@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BubbleSort Visualizer</title>
+    <style>
+      /* styles.css */
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button {
+        padding: 1.3em 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+      }
+
+      button:hover {
+        background-color: #23c483;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+
+      button:active {
+        transform: translateY(-1px);
+      }
+
+      #arrayContainer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 300px;
+        margin-top: 20px;
+      }
+
+      .bar {
+        margin: 0 2px;
+        background-color: #3498db;
+        width: 20px;
+        transition: background-color 0.2s, height 0.2s; /* Add transition for smooth effect */
+      }
+
+      .bar.glowing {
+        background-color: #23c483; /* Mint green */
+      }
+
+      .bar.sorted {
+        background-color: #23c483; /* Mint green for sorted bars */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button id="generateArray">Generate New Array</button>
+      <button id="bubbleSort">Bubble Sort</button>
+      <button id="MergeSort">Merge Sort</button>
+      <div id="arrayContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
